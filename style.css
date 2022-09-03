@@ -29,12 +29,29 @@ body {
   margin: auto;
   flex-direction: column;
   align-items: center;
-  
+  position: relative;
+}
+
+.main-area:before{
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  left: -700px;
+  top: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+.content-col{
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
 }
 
 textarea {
   margin: 2rem 0rem 1rem;
-  width: 65%;
+  width: 100%;
   min-height: 20vh;
 }
 
@@ -42,14 +59,14 @@ button {
   cursor: pointer;
   background-color: var(--primary);
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 auto;
   border: none;
   border-radius: 0.2rem;
 }
 
 #output{
-    margin: 2rem;
-    width: 65%;
+    margin: 2rem 0rem;
+    width: 100%;
     min-height: 20vh;
     border: 1px solid rgb(61, 59, 59);
 }
