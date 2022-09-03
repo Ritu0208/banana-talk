@@ -25,7 +25,6 @@ body {
 
 .main-area {
   display: flex;
-  max-width: 600px;
   margin: auto;
   flex-direction: column;
   align-items: center;
@@ -36,9 +35,9 @@ body {
   content: '';
   background: #ffffff;
   position: absolute;
-  width: 25%;
+  width: 105%;
   height: 100%;
-  left: -700px;
+  left: 0px;
   top: 0;
   z-index: -1;
   opacity: 0.7;
